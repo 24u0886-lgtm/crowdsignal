@@ -1,0 +1,42 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #1e40af;
+    --bg: #f3f4f6;
+    --white: #ffffff;
+    --text: #1f2937;
+    --pending: #ef4444;
+    --progress: #f59e0b;
+    --resolved: #10b981;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: var(--bg); color: var(--text); }
+
+.navbar { background: var(--primary); color: var(--white); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.navbar a { color: var(--white); text-decoration: none; background: var(--secondary); padding: 0.5rem 1rem; border-radius: 5px; }
+
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+.auth-container { max-width: 400px; margin: 5rem auto; background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.card { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: bold; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 5px; }
+button { background: var(--primary); color: var(--white); border: none; padding: 0.75rem 1.5rem; border-radius: 5px; cursor: pointer; font-size: 1rem; width: 100%; }
+button:hover { background: var(--secondary); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.stat-card { background: var(--white); padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.stat-card h3 { font-size: 2rem; color: var(--primary); }
+
+table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 8px; overflow: hidden; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+th { background: #f9fafb; font-weight: bold; }
+
+.badge { padding: 0.25rem 0.75rem; border-radius: 20px; color: var(--white); font-size: 0.85rem; font-weight: bold; }
+.status-Pending { background: var(--pending); }
+.status-In-Progress { background: var(--progress); }
+.status-Resolved { background: var(--resolved); }
+
+.issue-img { width: 80px; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; }
+.toggle-link { text-align: center; margin-top: 1rem; cursor: pointer; color: var(--primary); }
